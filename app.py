@@ -6,7 +6,7 @@ st.set_page_config(page_title="FlameGraph Diff Tool", layout="wide")
 
 
 # --- PARSER LOGIC ---
-@st.cache_data
+@st.cache_resource(max_entries=10, show_spinner=False)
 def parse_collapsed_data(content):
     """
     Parses 'collapsed stack' format: "func;func;func count"
