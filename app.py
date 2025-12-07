@@ -240,7 +240,7 @@ with col2:
                     height=900,
                     uniformtext=dict(minsize=8, mode="hide"),
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig, width="stretch")
             else:
                 st.warning(
                     f"No data visible. Try reducing the Noise Filter (currently {prune_val}%)."
